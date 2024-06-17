@@ -1,0 +1,56 @@
+.All_sign_in {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12%;
+  border: 2px solid green;
+  width: 450px;
+  margin-left: 40%;
+  padding: 28px;
+  padding-bottom: 48px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  transform: skew(20);
+  
+}
+.All_sign_in input {
+  width: 350px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.All_sign_in h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.All_sign_in h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.All_sign_in button {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 50px;
+  border-radius: 5;
+  width: 200px;
+}
+
+.Load {
+  margin-left: 150px;
+  margin-top: 60px;
+  font-size: x-large;
+}
+.create_new {
+  background-color: blue;
+  border-color: blue;
+  font-size: 15px;
+  border-radius: 8px;
+}
