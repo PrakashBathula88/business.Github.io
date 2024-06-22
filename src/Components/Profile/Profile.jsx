@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Profile/Profile.css";
 
 import Authcontext from "../LoginProvider/Loginprovider";
@@ -10,7 +10,13 @@ const Profile = () => {
 
   const authCtx = useContext(Authcontext);
 
-  const SubmitHandler = (event) => {
+  const naviagate=useNavigate();
+
+  const homePage=()=>{
+    naviagate('/');
+  }
+
+  const submitHandler = (event) => {
     event.preventDefault();
     const enteredNewpassword = newpasswordInputref.current.value;
       
@@ -32,21 +38,35 @@ const Profile = () => {
   };
 
   return (
-    <form onSubmit={SubmitHandler}>
-      <div>
-        <div className="profile_page">
-          <h1> Profile</h1>
-          <h3>New Password</h3>
-          <input
-            type="passsword"
-            minLength="8"
-            ref={newpasswordInputref}
-          ></input>
-          <button className="profile-button">Change passsword</button>
-        </div>
+    <div className="form-container">
+    <div className="logo-container">Password Change</div>
+
+    <form className="form" onSubmit={submitHandler}>
+      <div className="form-group">
+        <label htmlFor="newPassword">New Password</label>
+        <input
+          type="password"
+          id="newPassword"
+          minLength="8"
+      ref={newpasswordInputref}
+          required
+        />
       </div>
+
+      <button className="form-submit-btn" type="submit">
+        Send Email
+      </button>
     </form>
+
+    <p className="signup-link">
+       Go To Products
+      <h className="signup-link link" onClick={homePage}>
+       Home
+      </h>
+    </p>
+  </div>
   );
 };
 
 export default Profile;
+

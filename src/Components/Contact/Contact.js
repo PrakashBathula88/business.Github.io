@@ -35,6 +35,7 @@ const Contact = () => {
 
   return (
     <div className="All_contacts">
+      <div className="wrapping">
       <div className="Contact_name">
         <h1>Contact us</h1>
         <p>
@@ -97,7 +98,7 @@ const Contact = () => {
           ></input>
           </div>
         </div>
-        <div></div>
+      </div>
       
         <button onClick={ToggleContactSubmit} type="submit">Send</button>
         </div>

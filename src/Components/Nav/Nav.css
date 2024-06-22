@@ -8,86 +8,69 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  padding-right: 0px;
-}
-.Nav_items span {
-  padding: 20px;
+  padding-right: 10px;
 }
 
 .Allnavitems {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   list-style-type: none;
   color: rgba(250, 235, 215, 0.751);
+  
 }
 
-.Allnavitems a {
+.Allnavitems a,
+.Allnavitems .nav-item,
+.insta {
   padding: 0 10px;
   text-decoration: none;
   color: inherit;
-}
-
-.Gene_Cart_len {
-  width: 10vw;
-}
-
-.Gene_Cart_len h1 {
-  margin-top: 70px;
-  font-size: 60px;
-  height: 160px;
   display: flex;
   align-items: center;
-  color: rgb(0, 0, 0);
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.408);
-  width: 100vw;
-  position: relative;
 }
-
+.nav-item-list{
+  display: flex;
+}
 .insta {
-  width: 10em;
   position: relative;
   height: 3.5em;
-  margin: 20px;
+  margin: 0 20px;
   border: 3px ridge #149cea;
   outline: none;
   background-color: black;
   color: white;
-  transition: 1s;
-  border-radius: 0.3em;
+  transition: 0.5s;
+  border-radius: 10px;
   font-size: 16px;
   font-weight: bold;
-  cursor:cell;
-  border-radius: 10px;
-}
-* button{
   cursor: pointer;
 }
-.insta::after {
+.len{
+  border: 2px solid red;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 5px;
+}
+.insta::after,
+.insta::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 3%;
   width: 95%;
   height: 40%;
   background-color: black;
   transition: 0.5s;
   border-radius: 10px;
-  transform-origin: center;
-  
+}
+
+.insta::after {
+  top: -10px;
+  left: 3%;
 }
 
 .insta::before {
-  content: "";
-  transform-origin: center;
-  position: absolute;
   top: 80%;
   left: 3%;
-  border-radius: 10px;
-  width: 95%;
-  height: 40%;
-  background-color: black;
-  transition: 0.5s;
 }
 
 .insta:hover::before,
@@ -95,14 +78,49 @@
   transform: scale(0);
 }
 
-.insta:hover {
-  box-shadow: inset 0px 0px 25px #1479ea;
+.shop {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 20px;
+  cursor: pointer;
 }
 
-.shop{
-width: 150px;
-border-radius:50%;
-margin: 600px;
-background-color: black;
-cursor: pointer;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .Nav_items {
+    justify-content: space-between;
+    padding: 0 10px;
+    height: auto;
+  }
+
+  .Allnavitems {
+    flex-wrap: wrap;
+    
+    justify-content: center;
+  }
+
+  .Allnavitems a,
+  .Allnavitems .nav-item,
+  .insta {
+    padding: 10px;
+    font-size: 14px;
+    
+  }
+
+  .insta {
+    width: auto;
+    height: auto;
+    margin: 10px;
+  }
+
+  .shop {
+    margin: 10px;
+  }
 }

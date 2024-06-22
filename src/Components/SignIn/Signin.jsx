@@ -1,5 +1,5 @@
 import React, { useState, useRef, useContext } from "react";
-import "../SignIn/Sign.css";
+import "./Sign.css";
 import { useNavigate } from "react-router-dom";
 import Authcontext from "../LoginProvider/Loginprovider";
 

@@ -1,27 +1,31 @@
 import React from "react";
+
 import { FaRegCirclePlay } from "react-icons/fa6";
-import "./Home.css";
+import "./Albums.css";
 const Albums = () => {
   return (
     <div>
       <div className="Heading_Generics">
         <span>
-          {/* <h1>THE GENERICS</h1> */}
           <h2>Get our Latest Album</h2>
 
           <FaRegCirclePlay
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              padding: "0px",
-              width: "15%",
-              height: "10%",
-              marginLeft: "240px",
-              cursor: "pointer",
-              backgroundColor: "1px solid skyblue",
-              marginBottom: "-150px",
-            }}
+           style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100px", 
+            height: "100px", 
+            cursor: "pointer",
+            backgroundColor: "skyblue",
+            borderRadius: "50%", 
+            position: "absolute", 
+            top: "44%", 
+            left: "50%", 
+            transform: "translate(-50%, -50%)", 
+            zIndex: 10, 
+          }}
+          
           />
         </span>
       </div>

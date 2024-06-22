@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../Dummyitems/Phones.css";
+import "./Phones.css";
 import { IoMdCart } from "react-icons/io";
 import { LiaRupeeSignSolid } from "react-icons/lia";
 import { useProductContext } from "../AddCart/CartProviders";

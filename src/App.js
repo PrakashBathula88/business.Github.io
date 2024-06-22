@@ -8,13 +8,13 @@ import Nav from "./Components/Nav/Nav";
 import Cart from "./Components/Cart/CartItems.js";
 import About from "./Components/About/About";
 import { ProductProvider } from "./Components/AddCart/CartProviders.js";
-import Albums from "./Components/Albums/Home.js";
+import Albums from "./Components/Albums/Albums.js";
 import Contact from "./Components/Contact/Contact.js";
-import Singlepage from "./Components/SinglePage/SinglePage.jsx";
-import Signin from "./Components/SignIn/Signin.jsx";
+import Signin from "./Components/Signin/Signin.jsx";
 import Profile from "./Components/Profile/Profile.jsx";
-import Private from "./Components/Privatepage/Private.jsx";
-import HomeSection from "./Components/Homesection/HomeSection.jsx";
+import Private from "./Components/Private/Private.jsx";
+import Home from "./Components/Home/Home.jsx";
+import SinglePage from "../src/Components/SinglePage/SinglePage.jsx"
 function App() {
 
 
@@ -25,9 +25,9 @@ function App() {
           <Nav />
           <Routes>
             <Route element={<Private/>}>
-            <Route path="/" element={<HomeSection />} exact></Route>
+            <Route path="/" element={<Home />} exact></Route>
             </Route>
-            <Route path="singlepage/:id" element={<Singlepage />}></Route>
+            <Route path="singlepage/:id" element={<SinglePage />}></Route>
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/album" element={<Albums />}></Route>

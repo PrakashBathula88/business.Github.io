@@ -1,13 +1,12 @@
-
-import "../Cart/Cart.css";
+import React from "react";
 import { FiPlus } from "react-icons/fi";
-import CartPortal from "../CartModal/Cartportals";
-import { useProductContext } from "../AddCart/CartProviders";
 import { CiCircleMinus } from "react-icons/ci";
-const Cart = ({ onClose,ProductsList }) => {
+import { useProductContext } from "../AddCart/CartProviders";
+import "../Cart/Cart.css";
+import CartPortal from "../CartModal/Cartportals"
+
+const Cart = ({ onClose, ProductsList }) => {
   const { handleRemove } = useProductContext();
-
-
 
   return (
     <>
@@ -36,16 +35,16 @@ const Cart = ({ onClose,ProductsList }) => {
                     </td>
                     <td>{item.title}</td>
                     <td>{item.price}</td>
-                    <td>{item.quantity}
-                    <ul className="things">
-                      <li className="plus">
-                        <td className="plus-symbol" ><FiPlus /></td>
-                        <td><CiCircleMinus /></td>
-                      </li>
-                    </ul>
+                    <td>{item.quantity}</td>
+                    <td>
+                      <FiPlus className="plus-symbol" />
+                      <CiCircleMinus className="minus-symbol" />
                     </td>
                     <td>
-                      <button onClick={() => handleRemove(index)} className="remove_button">
+                      <button
+                        onClick={() => handleRemove(index)}
+                        className="remove_button"
+                      >
                         REMOVE
                       </button>
                     </td>
@@ -57,7 +56,7 @@ const Cart = ({ onClose,ProductsList }) => {
         </CartPortal>
       ) : (
         alert("No cart items")
-      )} 
+      )}
     </>
   );
 };

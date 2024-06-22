@@ -79,17 +79,17 @@ const SinglePage = () => {
           </div>
           <div className="warranty_section">
             <p>
-              1 Year Warranty for Phone and 6 Months Warranty for In-Box
+              1 Month Warranty for cloth and 6 Months Warranty for In-Box
               Accessories
             </p>
           </div>
           <div className="highlight_section">
             <div>
-              <h2>Storage</h2>
+              <h2>Sizes</h2>
               <div className="storage_options">
-                <span>128 GB</span>
-                <span>256 GB</span>
-                <span>512 GB</span>
+                <span>25 Small</span>
+                <span>256 Large</span>
+                <span>512 Medium</span>
               </div>
             </div>
             <div>
@@ -97,106 +97,27 @@ const SinglePage = () => {
               <ul>
                 <li>
                   <LuDot />
-                  128 GB ROM
+                 28 Size
                 </li>
                 <li>
                   <LuDot />
-                  15.49 cm (6.1 inch) Super Retina XDR Display
+                  15.49 cm (6.1 inch) Super Retina XDR color
                 </li>
                 <li>
-                  <LuDot /> 48MP + 12MP | 12MP Front Camera
+                  <LuDot /> 48 M + 12 S | size
                 </li>
                 <li>
-                  <LuDot /> A16 Bionic Chip, 6 Core Processor Processor
+                  <LuDot /> A16 Bionic High quality Product
                 </li>
               </ul>
             </div>
           </div>
           <h2>Description</h2>
           <p className="description">{product.description}</p>
-          {/* <div className="product_description">
-            <h2>Product Description</h2>
-            <h2>Dynamic Island</h2>
-            <p>
-              Dynamic Island bubbles up alerts and Live Activities — so you
-              don’t miss them while you’re doing something else. You can track
-              your next ride, see who’s calling, check your flight status, and
-              so much more.
-            </p>
-            <img
-              src="https://rukminim2.flixcart.com/image/200/200/cms-rpd-img/2a68bc53a5b740068a62b8140a19770e_18a8cada497_1.jpeg?q=90"
-              alt="Dynamic Island"
-              style={{ marginLeft: "80px", marginTop: "-100px" }}
-            />
-            <img
-              src="https://rukminim2.flixcart.com/image/200/200/cms-rpd-img/af0f9e1e23c042ce9d8f27b02bb996d3_18a8cacbaad_HighlyDurable.jpeg?q=90"
-              alt="Highly Durable"
-              style={{ marginLeft: "80px", marginTop: "-50px" }}
-            />
-            <p style={{ marginLeft: "200px", marginTop: "-100px" }}>
-              Highly Durable The innovative new design features back glass that
-              has color infused throughout the material. A custom dual
-              ion-exchange process for the glass, and an aerospace-grade
-              aluminum enclosure, help make the iPhone 15 incredibly durable.
-            </p>
-          </div> */}
+         
         </div>
       </div>
-      {/* <div className="footer">
-        <div className="footer-column">
-          <h3>About</h3>
-          <ul>
-            <li>Contact us</li>
-            <li>About us</li>
-            <li>Careers</li>
-            <li>Flipkartstories</li>
-            <li>Press</li>
-            <li>Corporate Information</li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h3>Group Companies</h3>
-          <ul>
-            <li>Myntra</li>
-            <li>Flipkart Wholesale</li>
-            <li>Cleartrip</li>
-            <li>Shortify</li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h3>Help</h3>
-          <ul>
-            <li>Payments</li>
-            <li>Shipping</li>
-            <li>Cancellation & Returns</li>
-            <li>FaQ</li>
-            <li>Report Infringement</li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h3>Consumer Policy</h3>
-          <ul>
-            <li>Cancellation & Returns</li>
-            <li>Terms of Use</li>
-            <li>Security</li>
-            <li>Privacy</li>
-            <li>Sitemap</li>
-            <li>Grievance Redressal</li>
-            <li>EPR Compliance</li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h3>Mail Us</h3>
-          <ul>
-            <li>Flipkart Internet Private Limited,</li>
-            <li>Buildings Alyssa, Begonia &</li>
-            <li>Clove Embassy Tech Village,</li>
-            <li>Outer Ring Road, Devarabeesanahalli Village,</li>
-            <li>Bengaluru, 560103,</li>
-            <li>Karnataka, India</li>
-          </ul>
-        </div>
-      </div> */}
+   
     </div>
   );
 };

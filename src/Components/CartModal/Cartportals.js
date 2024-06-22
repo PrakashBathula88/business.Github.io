@@ -1,35 +1,23 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import classes from "../CartModal/CartPort.css";
 
-// Backdrop Component
-const Backdrop = (props) => {
-  return <div className={classes.backdrop} onClick={props.onClose} />;
-};
+const CartPortal = ({ onClose, children }) => {
+  const portalRoot = document.getElementById("CartItemList");
 
-// ModalOverlay Component
-const ModalOverlay = (props) => {
-  return (
-    <div className={classes.modal}>
-      <div className={classes.content}>{props.children}</div>
-    </div>
-  );
-};
-
-// CartPortal Component
-const CartPortal = (props) => {
-  const portals = document.getElementById("CartItemList");
-  
-  if (!portals) {
-    console.error("The element with id 'CartItemList' does not exist in the DOM.");
+  if (!portalRoot) {
+    console.error("Portal root element ");
     return null;
   }
 
-  return (
-    <Fragment>
-      {ReactDOM.createPortal(<Backdrop onClose={props.onClose} />, portals)}
-      {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>, portals)}
-    </Fragment>
+  return ReactDOM.createPortal(
+    <>
+      <div className={classes.backdrop} onClick={onClose} />
+      <div className={classes.modal}>
+        <div className={classes.content}>{children}</div>
+      </div>
+    </>,
+    portalRoot
   );
 };
 
